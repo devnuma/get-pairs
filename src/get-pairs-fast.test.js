@@ -1,5 +1,5 @@
 import { AssertionError, deepStrictEqual } from "node:assert";
-import getPairs from "./get-pairs.js";
+import getPairs from "./get-pairs-fast.js";
 
 const runTests = () => {
     const tests = [
