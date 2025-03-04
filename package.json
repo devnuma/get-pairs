@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test:fast": "node src/get-pairs-fast.test.js",
-    "test:slow": "node src/get-pairs-slow.test.js"
+    "test:hashmap": "node src/get-pairs-hashmap.test.js",
+    "test:brute": "node src/get-pairs-brute-force.test.js"
   },
   "keywords": [],
   "author": "",

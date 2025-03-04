@@ -13,7 +13,7 @@
 
 2. cd get-pairs
 
-3. npm test
+3. npm test:hashmap | npm test:brute
 
 ## **Time Complexity Analysis For Fast Version**
 
