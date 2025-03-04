@@ -1,4 +1,3 @@
-
 function getPairs(arr, target) {
     const result = [];
     const used = new Set();
@@ -17,3 +16,5 @@ function getPairs(arr, target) {
     }
     return result;
 }
+
+export default getPairs;

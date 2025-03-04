@@ -15,7 +15,7 @@
 
 3. npm test
 
-## **Time Complexity Analysis**
+## **Time Complexity Analysis For Fast Version**
 
 ### **Breaking Down the Loops**
 
@@ -52,3 +52,30 @@
 ### **Overall Space Complexity**
 - The dominant factor is the `Map` and `result` array, both taking **O(n) space**.
 - Therefore, the total **space complexity is O(n)**.
+
+
+---
+
+## **Time Complexity For Slow Version**
+
+1. **Outer Loop**:
+   - Iterates `n` times (where `n` is the length of the array).
+
+2. **Inner Loop**:
+   - For each element in the outer loop, the inner loop also iterates up to `n` times (or fewer as the index progresses).
+
+Thus, the total time complexity is:
+**O(n) * O(n) = O(n²)**
+
+---
+
+## **Space Complexity For Slow Version**
+
+1. **Set (`usedIndices`)**:
+   - We are using a `Set` (`usedIndices`) to track the indices of elements that have already been used in pairs. This requires **O(n)** space in the worst case.
+
+2. **Result Array (`result`)**:
+   - The `result` array can also grow up to **O(n)** size (in the worst case, where every two elements form a pair).
+
+Therefore, the space complexity is:
+**O(n)**
